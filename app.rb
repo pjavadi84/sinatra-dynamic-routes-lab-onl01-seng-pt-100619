@@ -38,8 +38,9 @@ class App < Sinatra::Base
       "#{@number1 - @number2}".to_s
     elsif @operation == "multiply"
       "#{@number1 * @number2}"
-    elsif
-      
+    elsif @operation == "divide"
+      "#{@number1/@number2}"
+    end
     binding.pry
   end
     
